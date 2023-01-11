@@ -1,0 +1,114 @@
+@import url(../css/header-footer.css);
+@import url(../css/navbar.css);
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    padding: 0 80px;
+    background-color: #000;
+}
+.nav-bar-items .nav-bar-item .contact::after{
+    width: 120%;
+}
+main .contact-section{
+    /* background-color: yellowgreen; */
+    padding: 80px 0;
+    display: flex;
+}
+.contact-section .contact-big-container{
+    /* background-color: orange; */
+    width: 50%;
+}
+.contact-big-container .contact-title-container{
+    font-family: 'Playfair Display';
+    font-size: 64px;
+    padding-bottom: 80px;
+    background: linear-gradient(90deg, #bd10c3, #cd1590 29%, #d2177e 58%, #f3a3a3);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.contact-big-container .socials-container{
+    /* background-color: pink; */
+    /* width: 80%; */
+    display: flex;
+    justify-content: space-between;
+}
+.social-container{
+    /* background-color: red; */
+    /* width: 25%; */
+}
+.social-title{
+    font-family: 'Merriweather';
+    font-size: 16px;
+    color:#d2177e;
+    font-weight: 900;
+    padding:0 0 15px 10px;
+}
+.social-desc{
+    padding-bottom: 10px;
+    /* background-color: yellow; */
+    display: flex;
+    align-items:center;
+}
+.social-desc .i1{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background:linear-gradient(90deg, #bd10c3, #cd1590 29%, #d2177e 58%, #f3a3a3);
+    color: white;
+    text-align: center;
+    line-height: 2.5;
+}
+.social-desc a{
+    font-family: 'Merriweather';
+    font-size: 16px;
+    color: #d2177e;
+    position: relative;
+    padding-left: 10px;
+}
+.social-desc a::after{
+    position: absolute;
+    content: '';
+    width:0;
+    height: 2px;
+    background-color: white;
+    top: 100%;
+    left: 0;
+    transition: 0.5s;
+}
+.social-desc a:hover::after{
+    width: 100%;
+}
+.social-desc a i{
+    transform: rotate(-45deg) translate(-200%,0);
+    transition: 0.5s;
+    color: white;
+    opacity: 0;
+}
+.social-desc a:hover i{
+    opacity: 1;
+    transform: rotate(-45deg) translate(0,0);
+}
+.contact-section .contact-img-container{
+    background:url(../images/envelopewithwings.png);
+    /* background-color: pink; */
+    width: 45%;
+    animation:rotating 3s ease-in-out infinite;
+}
+@keyframes rotating{
+    0%{
+        transform: rotate(-8deg);
+    }
+    50%{
+        transform: rotate(16deg);
+    }
+    100%{
+        transform: rotate(-8deg);
+    }
+}
+
