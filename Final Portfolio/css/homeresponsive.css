@@ -1,0 +1,28 @@
+@media(max-width:1300px){
+    body{padding: 0 10px;}
+    .name-title-container .first-name,.name-title-container .last-name{font-size: 80px;}
+}
+
+@media (max-width: 992px){
+    body{padding: 0 10px}
+    header .social-nav-container{display: none;}
+    main .name-cube-section{flex-direction: column-reverse;}
+    .name-cube-section .cube-container{padding: 100px 160px;}
+    .box-area .box{width: 200px; height: 200px;}
+    .box-area .box-front{transform:rotateZ(45deg)  translateX(0px) translateY(0px) translateZ(116px);}
+    .box-area .box-right{transform:  rotateY(-90deg) rotateZ(45deg) translate3d(0,0,116px);}
+    .box-area .box-left{transform: rotateY(90deg) rotateZ(45deg) translate3d(0,0,116px);}
+    .box-area .box-back{transform: rotateY(180deg) rotateZ(45deg) translate3d(0,0,116px);}
+    .name-cube-section .name-title-container{width: 100%;padding-top: 240px;height: 400px;}
+    .name-title-container .first-name,.name-title-container .last-name{font-size: 40px; position: relative;}
+    .name-title-container .last-name{margin-top: 0;}
+    main .description-section{width: 100%; grid-template-columns: 1fr;}
+    footer{flex-direction: column;justify-content: center;align-items: center;}
+}
+@media (max-width:430px){
+    .nav-bar-container{display: block;}
+    .nav-bar-container .nav-bar-items{width: 100%;}
+    .name-cube-section .cube-container{display: none;}
+    .name-cube-section .name-title-container{width: 100%;padding-top: 150px;height: 300px;}
+    footer{font-size: 12px;}
+}
